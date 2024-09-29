@@ -1,13 +1,13 @@
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log("Assertion Passed: actual === expected");
+    console.log(`\u{1F603} Assertion Passed:${actual} === ${expected}`);
   } else {
-    console.log("Assertion Failed: actual !== expected");
+    console.log(`\u{1F62E} Assertion Failed:${actual} !== ${expected}`);
   }
 };
 
 // Outputs
-assertEqual("\u{1F62E} Lighthouse Labs", "Bootcamp");
-assertEqual("\u{1F603} 1",1);
-assertEqual("\u{1F62E} 52", 23);
-assertEqual("\u{1F603} Icecream", "Icecream");
+assertEqual("Lighthouse Labs", "Bootcamp");
+assertEqual(1,1);
+assertEqual(52, 23);
+assertEqual("Icecream", "Icecream");
