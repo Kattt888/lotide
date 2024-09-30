@@ -1,7 +1,15 @@
 const assertEqual = function(actual, expected) {
 const val = [actual, expected];
-const firstVal = _.head(val);
-}
+const first = _.head(val);
+console.log(first)
+
+
+if (actual === expected) {
+    console.log(`Assertion Passed: ${actual} === ${expected}`);
+} else {
+    console.log(`Assertion Failed: ${actual} !== ${expected}`)
+  }
+
 
 // Outputs
 assertEqual(head([5, 6, 7]), 5);
