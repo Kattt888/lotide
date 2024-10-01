@@ -22,7 +22,7 @@ const assertArrayEqual = function(arr1, arr2) {
 };
 
 // Outputs
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]); // => should PASS
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), // => should FAIL
-assertEqual(eqArrays(["1", "2" , "3"], ["1", "2", 3]), false); // => should FAIL
-assertEqual(eqArrays([], []); // => should PASS
+assertArrayEqual([1, 2, 3], [1, 2, 3]); // => should PASS
+assertArrayEqual([1, 2, 3], [3, 2, 1]), // => should FAIL
+assertArrayEqual(["1", "2" , "3"], ["1", "2", 3]), false); // => should FAIL
+assertArrayEqual([], []); // => should PASS
