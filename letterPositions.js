@@ -46,8 +46,8 @@ const assertEqual = function(actual, expected) {
 
 
 //TEST
-assertArraysEqual(letterPositions("hello");
-assertArraysEqual(result["h"], [0]);
-assertArraysEqual(result["e"], [1]);
-assertArraysEqual(result["l"], [2, 3]);
-assertArraysEqual(result["o"], [4]);
+const results = letterPositions("hello");
+assertArraysEqual(results["h"], [0]);
+assertArraysEqual(results["e"], [1]);
+assertArraysEqual(results["l"], [2, 3]);
+assertArraysEqual(results["o"], [4]);
