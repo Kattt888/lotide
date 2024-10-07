@@ -6,7 +6,7 @@ const takeUntil = function(array, callback) {
     if (callback(element)) { // calling callback function, passing element
       return results; //exit loop - give result of array
     }
-    results.push(item); //push elements of array
+    results.push(element); //push elements of array
   }
   return results;
 }
