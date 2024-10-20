@@ -13,4 +13,4 @@ assertEqual(result[0], "Lighthouse");
 assertEqual(result[1], "Labs");
 
 const emptyArray = [];
-assertEqual(tail(emptyArray), []); 
+assertEqual(tail(emptyArray).length, 0); 
