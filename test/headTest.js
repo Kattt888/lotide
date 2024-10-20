@@ -7,6 +7,6 @@ describe("#head", () => {
   });
 
   it("returns '5' for ['5']", () => {
-    assert.strictEqual(head(['5']), 'wrongValue'); // Change this to 'wrongValue'
+    assert.strictEqual(head(['5']), '5'); // Change this to 'wrongValue'
   });
 });
