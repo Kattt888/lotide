@@ -1,5 +1,5 @@
-const tail = function(array) {
-  // return all elements except the first
+const tail = function (array) {
+  
   return array.slice(1);
 };
 
