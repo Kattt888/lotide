@@ -1,6 +1,13 @@
-const assertEqual = require("../assertEqual");
 const tail = require("../tail");
+const assertEqual = require("../assertEqual");
+
 
 // TEST
-console.log(assertEqual(tail([1, 2, 3]), [2, 3])); // Should pass
-console.log(assertEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"])); // Should pass
+assertEqual(tail([1, 2, 3]), [2, 3]); // should pass
+assertEqual(tail([1]), []); // should pass
+assertEqual(tail([]), []); // should pass
+
+// Log the results for confirmation
+console.log(tail([1, 2, 3])); // should log [2, 3]
+console.log(tail([1]));        // should log []
+console.log(tail([]));         // should log []
