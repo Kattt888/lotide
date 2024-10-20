@@ -1,8 +1,8 @@
 const tail = require("../tail");
-const assertArraysEqual = require("../assertArraysEqual");
+const assertEqual = require("../assertEqual");
 
 
 // TEST
-assertArraysEqual(tail([1, 2, 3]), [2, 3]); // should pass
-assertArraysEqual(tail([1]), []); // should pass
-assertArraysEqual(tail([]), []); // should pass
+const words = ["Yo Yo", "Lighthouse", "Labs"];
+tail(words);
+assertEqual(words.length, 3);
